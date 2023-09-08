@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin-right: 50%;
+}
+
+.cabeçalho {
+    background-color: #0b0b0b;
+    padding: 16px 0;
+    width: 100%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.ciencia a:hover{
+   color:  rgb(128, 255, 0);
+}
+.games a:hover{
+    color: rgb(210, 105, 30);
+ }
+ .tecnologia a:hover{
+    color: rgb(19, 120, 243);
+ }
+ .animes a:hover{
+    color: rgb(127, 255, 212);
+ }
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header li {
+    display: inline;
+}
+
+.container-main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section h2,
+article .articles {
+    padding: 16px 0;
+}
+h2{
+    font-size: 30px;
+}
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+#tecnologia a {
+    background-color: rgb(19, 120, 243, 0.3);
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10%;
+}
+
+#tecnologia a:hover {
+    text-decoration: underline;
+    background-color:  rgb(19, 120, 243);
+
+}
+#ciencia a {
+    background-color: rgba(29, 189, 50, 0.518);
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10%;
+}
+
+#ciencia a:hover {
+    text-decoration: underline;
+    background-color: rgba(29, 189, 50);
+
+}
+
+#games a {
+    background-color: rgba(19, 120, 243, 0.573);
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10%;
+}
+
+#games a:hover {
+    text-decoration: underline;
+    background-color: rgb(19, 120, 243);
+
+}
+
+#animes a {
+    background-color:  rgba(17, 185, 171, 0.58);
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10%;
+}
+
+#animes a:hover {
+    text-decoration: underline;
+    background-color:  rgb(127, 255, 204)
+
+}
+
+#tecnologia {
+    background-color: rgb(19, 120, 243, 0.3);
+}
+
+#ciencia {
+    background-color: rgba(128, 255, 0, 0.3);
+}
+
+#games {
+    background-color: rgba(210, 105, 30, 0.3);
+}
+
+#animes {
+    background-color: rgba(127, 255, 212, 0.2);
+}
+
+.title-sections {
+    display: flex;
+    justify-content: center;
+}
