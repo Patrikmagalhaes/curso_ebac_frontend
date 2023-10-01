@@ -1,0 +1,48 @@
+.container {
+    max-width: 500px;
+    background-color: rgb(255, 208, 0);
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.mensagem {
+    display: none;
+}
+
+.valido {
+    display: block;
+    background-color: rgb(31, 243, 31);
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.mensagem2 {
+    display: none
+}
+
+.invalido {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/*.valido {
+    background-color: red !important;
+    display: block !important;
+}*/
