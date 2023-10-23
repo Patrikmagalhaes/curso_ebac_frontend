@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header><img
+                src="https://img.freepik.com/vetores-gratis/chapeu-de-formatura-de-estudante-com-borla-de-ouro-e-fita_107791-16542.jpg?size=626&ext=jpg&ga=GA1.1.867424154.1697932800&semt=ais"
+                alt="">
+            <h1>Calculadora de medias</h1>
+        </header>
+        <form action="">
+            <input type="text" required placeholder="Nome da atividade">
+            <input type="number" required min="0" max="10" placeholder="Nota da atividade">
+            <button>Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome da Atividade
+                    </th>
+                    <th>
+                        Nota da Atividade
+                    </th>
+                    <th>
+                        Aprovado ?
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atividade 1</td>
+                    <td>2</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/4746/4746759.png" alt=""></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Media final</td>
+                    <td>7</td>
+                    <td><span class="resultado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
