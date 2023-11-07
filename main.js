@@ -1,16 +1,16 @@
 $(document).ready(function () {
     $("header button").click(function () {
-        $("form").slideDown()
+        $("form").slideDown()//efeito de slide abrindo ao clicar em Adicionar imagem
     })
     $("#cancelar").click(function () {
-        $("form").slideUp()
+        $("form").slideUp()//efeito de slide fechando ao clicar em cancelar
     })
 
     $("form").on("submit", function (e) {
         e.preventDefault()
         const urlImagem = $("#urlImagemNova").val()
         console.log(`endereço: ${urlImagem}`)
-        const novoItem = $("<li></li>")
+        const novoItem = $(`<li style="display: none"></li>`)
         $(`<img src="${urlImagem}"/>`).appendTo(novoItem)
 
         $(`<div class="orverlay-image-link">
@@ -19,6 +19,10 @@ $(document).ready(function () {
             </a>
             </div>`).appendTo(novoItem)
             $(novoItem).appendTo("ul")
+            $(novoItem).fadeIn(1000)
+            $("#urlImagemNova").val("")
+          
+
     })
 
 })
