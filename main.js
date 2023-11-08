@@ -4,7 +4,7 @@ $(document).ready(function () {
         e.preventDefault()
         const tarefa = $('input').val()//pega o valor do input (nome da tarefa)
         tarefa.trim()//limpa espaços antes e depois 
-        if (tarefasSalvas.includes(tarefa.value) || tarefa == null) {
+        if (tarefasSalvas.includes(tarefa.value)) {
             alert("A tarefa ja existe !")
             $('input').val("")
         } else {
@@ -14,11 +14,13 @@ $(document).ready(function () {
         }
         $(`#lista`).click(function () {
             let i = 0
-            for (i; i<=1;i ++){
-              
+            for (i; i < 1; i++) {
             } //tentando implementar logica de marcar e desmarcar item com for
-            $(this).addClass("tarefa-feita")
+            if (i == 1) {
+                console.log(i)
+                $(this).addClass("tarefa-feita")
+            }
         })
-        
     })
 })
+
