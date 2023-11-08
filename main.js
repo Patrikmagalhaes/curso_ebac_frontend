@@ -13,7 +13,12 @@ $(document).ready(function () {
             $(`<li>${tarefa}</li>`).appendTo(listaDeTarefa)//adiciona a tag li dentro da tag ol com o valor do input (nome da tarefa) 
         }
         $(`#lista`).click(function () {
-            $(this).css("text-decoration", "line-through")
+            let i = 0
+            for (i; i<=1;i ++){
+              
+            } //tentando implementar logica de marcar e desmarcar item com for
+            $(this).addClass("tarefa-feita")
         })
+        
     })
 })
