@@ -9,16 +9,23 @@ $(document).ready(function () {
             $('input').val("")
         } else {
             tarefasSalvas.push(tarefa.value)
-            const listaDeTarefa = $(`#lista`)//seleciona a tag ol onde sera adicionada as li's
-            $(`<li>${tarefa}</li>`).appendTo(listaDeTarefa)//adiciona a tag li dentro da tag ol com o valor do input (nome da tarefa) 
+            const listaDeTarefa = $(`#lista`)//seleciona a tag ul onde sera adicionada as li's
+            $(`<li>${tarefa}</li>`).appendTo(listaDeTarefa)//adiciona a tag li dentro da tag ul com o valor do input (nome da tarefa) 
         }
+
+        let on = [1]
         $(`#lista`).click(function () {
-            let i = 0
-            for (i; i < 1; i++) {
-            } //tentando implementar logica de marcar e desmarcar item com for
-            if (i == 1) {
-                console.log(i)
+          
+            if (on[0] === 1 ) {
                 $(this).addClass("tarefa-feita")
+                on = []
+                on.push(0) 
+            } else {
+                $(this).removeClass("tarefa-feita")
+                $(this).addClass(".na-feita")
+                on = []
+                on.push(1)
+            
             }
         })
     })
