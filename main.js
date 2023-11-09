@@ -1,7 +1,10 @@
 $(document).ready(function () {
+ 
     let tarefasSalvas = []
     $('form').on('submit', function (e) {
         e.preventDefault()
+        $("#tamplate").addClass("off")
+        $("#tamplate2").addClass("off")
         const tarefa = $('input').val().trim("")/*pega o valor do input (nome da tarefa)
         e limpa espaços antes e depois das palavras*/
 
@@ -14,10 +17,12 @@ $(document).ready(function () {
             tarefasSalvas.push(tarefa)
             const listaDeTarefa = $(`#lista`)//seleciona a tag ul onde sera adicionada as li's
             $(`<li>${tarefa}</li>`).appendTo(listaDeTarefa)//adiciona a tag li dentro da tag ul com o valor do input (nome da tarefa) 
+            $('input').val("")
         }
 
         let on = [1]
         $(`li`).click(function () {
+            console.log(on)
             //se for verdadeiro risca a atividade e atualiza o valor pra 0
             if (on[0] === 1) {
                 $(this).addClass("tarefa-feita")
@@ -25,7 +30,6 @@ $(document).ready(function () {
                 on.push(0)
             } else {//remove o risco da atividade e atualiza o valor pra 1
                 $(this).removeClass("tarefa-feita")
-                $(this).addClass(".na-feita")
                 on = []
                 on.push(1)
 

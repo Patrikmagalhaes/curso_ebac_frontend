@@ -1,7 +1,108 @@
-.tarefa-feita{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+li {
+    border-bottom: 1px solid rgba(20, 66, 150, 0.692);
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(20, 66, 150, 0.692)
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.tarefa-feita {
+    list-style: none;
+    text-decoration: line-through;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    border-bottom: 1px solid red;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgb(231, 233, 231);
+
+
+}
+
+img {
+    width: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgba(20, 66, 150, 0.692)
+    
+}
+
+input,
+button {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+form {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: rgba(3, 167, 221, 0.801);
+    color: aliceblue;
+    border: none;
+
+}
+
+button:hover {
+    background-color: rgb(3, 192, 255);
+}
+
+ul {
+    padding: 16px;
+}
+
+.tamplate {
+    list-style: none;
     text-decoration: line-through;
     color: rgb(255, 0, 0);
+    text-align: center;
+    border-bottom: 1px solid red;
+    opacity: 0.5;
+
 }
-.na-feita{
-    color: rgb(0, 0, 0);
+#tamplate2{
+    opacity: 0.5;
+}
+.off{
+    display: none;
 }
