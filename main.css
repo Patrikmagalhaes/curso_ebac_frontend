@@ -6,27 +6,35 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 header {
     padding-top: 16px;
     background-color: #192a52;
     color: #fff;
 }
-header > .container{
-    display: flex;
+
+header>.container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
-.container{
+
+.container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
-nav{
+
+nav {
     background-color: #575fcf;
     padding: 16px 0;
+    display: none;
 }
-nav li{
+
+nav li {
     list-style: none;
     display: inline;
     margin-right: 16px;
@@ -34,17 +42,82 @@ nav li{
     font-size: 18px;
     text-transform: uppercase;
 }
-nav li a{
-    color:#fff ;
+
+nav li a {
+    color: #fff;
     text-decoration: none;
 }
-.menu-hamburguer{
+
+.menu-hamburguer {
     width: 32px;
 }
-.menu-hamburguer span{
+
+.menu-hamburguer span {
     height: 2px;
     width: 100%;
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 16px;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.lista-veiculos li img {
+    width: 100%;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-veiculos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #119759;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+.price{
+    margin: 16px 0;
+    display: block;
+}
+.price del{
+    color: #ccc;
+    font-size: 15px;
 }
