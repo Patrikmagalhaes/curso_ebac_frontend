@@ -1,10 +1,13 @@
 $(document).ready(function () {
- 
     let tarefasSalvas = []
+
     $('form').on('submit', function (e) {
         e.preventDefault()
-        $("#tamplate").addClass("off")
-        $("#tamplate2").addClass("off")
+       /* $("#tamplate").addClass("off")
+        $("#tamplate2").addClass("off") */
+
+        $("#tamplate, #tamplate2").addClass("off")
+
         const tarefa = $('input').val().trim("")/*pega o valor do input (nome da tarefa)
         e limpa espaços antes e depois das palavras*/
 
@@ -20,7 +23,7 @@ $(document).ready(function () {
             $('input').val("")
         }
 
-        let on = [1]
+      /* let on = [1]
         $(`li`).click(function () {
             console.log(on)
             //se for verdadeiro risca a atividade e atualiza o valor pra 0
@@ -34,7 +37,12 @@ $(document).ready(function () {
                 on.push(1)
 
             }
-        })
+        })*/
     })
 })
 
+$('#lista').on('click', 'li', function () {
+    $(this).toggleClass("tarefa-feita");
+});
+ /* "toggleClass" Se a classe "tarefa-feita" já estiver presente, ela será removida; se não estiver presente, será adicionada. */
+ /*this Se refere ao elemento que acionou o evento */
