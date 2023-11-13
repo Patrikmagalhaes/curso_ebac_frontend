@@ -171,23 +171,23 @@
                 <h2>Entre em Contato</h2>
                 <div class="form-campo">
                     <label for="nome">Nome</label>
-                    <input type="text">
+                    <input type="text" name="nome" id="nome">
                 </div>
                 <div class="form-campo">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="campo-telefone">
+                    <label for="campo-telefone">Telefone</label>
+                    <input type="tel" id="campo-telefone" name="telefone">
                 </div>
                 <div class="form-campo">
                     <label for="email">E-mail</label>
-                    <input type="email">
+                    <input type="email" name="email" id="email">
                 </div>
                 <div class="form-campo">
-                    <label for="veiculo-interesse">Veiculo de interesse</label>
-                    <input type="text">
+                    <label for="veiculo-de-interesse">Veiculo de interesse</label>
+                    <input type="text" name="veiculoDeInteresse" id="veiculo-de-interesse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -211,6 +211,9 @@
     <script src="./js/messages_pt_BR.js"></script>
     <script>
         $(document).ready(function () {
+            $('form').on(`submit`, function(e){
+                e.preventDefault()
+            })
             $('#carrousel-images').slick({
                 autoplay: true
             })
@@ -224,9 +227,30 @@
                 rules: {
                     nome: {
                         required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    mensagem: {
+                        required: true
                     }
+                },
+                messages: {
+                    nome: 'por favor, insira o seu nome'
+                },
+                sumitHandler: function(form){
+                    console.log(form)
+                },
+                invalidHandler: function(evento,validador){
+                    let camposIncorretos = validador.numberOfInvalids()
+                   alert(`Existem ${camposIncorretos} campos incorretos`)
                 }
             })
+           
         })
     </script>
 </body>
