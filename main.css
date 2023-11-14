@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+body{
+    background-color: rgb(183, 196, 207);
+}
 .container {
     max-width: 800px;
     max-height: 800px;
@@ -13,9 +16,16 @@
 }
 
 input,
-label {
+button {
     display: block;
+    max-width:  200px;
+    width:100%;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
 }
+
 
 form div {
     max-width: 500px;
@@ -25,4 +35,16 @@ form div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h1{
+    text-align: center;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-input div,h1{
+    margin-bottom: 10px;
 }
