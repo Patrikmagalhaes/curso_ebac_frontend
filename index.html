@@ -23,7 +23,11 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-        <nav>
+        <div class="botao-menu">
+            <button>Abrir menu</button>
+        </div>
+        <nav class="container">
+
             <ul class="menu">
                 <li>Esportes
                     <ul class="submenu">
@@ -55,17 +59,50 @@
             <div class="clear"></div>
         </nav>
     </header>
-    <div class="conteudo">
+    <div class="container conteudo">
         <main>
-            <section class="destaque">
+            <section class="destaque ">
                 <h2>Em destaque</h2>
                 <article class="noticia">
                     <a href="#">
-                        <img src="//via.placeholder.com/320x320" alt="">
+                        <img src="https://via.placeholder.com/320x320" alt="">
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus quisquam ea quaerat
                             explicabo rem dolorum quod iure totam, doloribus nisi.</h3>
                     </a>
                 </article>
+            </section>
+            <section>
+                <h2>Ultimas noticias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320" alt="">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus quisquam ea quaerat
+                                explicabo rem dolorum quod iure totam, doloribus nisi.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/320x320" alt="">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus quisquam ea quaerat
+                                explicabo rem dolorum quod iure totam, doloribus nisi.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/320x320" alt="">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus quisquam ea quaerat
+                                explicabo rem dolorum quod iure totam, doloribus nisi.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="//via.placeholder.com/320x320" alt="">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus quisquam ea quaerat
+                                explicabo rem dolorum quod iure totam, doloribus nisi.</h3>
+                        </a>
+                    </article>
+                </div>
             </section>
         </main>
         <aside>
@@ -95,6 +132,17 @@
             </section>
         </aside>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.botao-menu button').click(function () {
+                $('.menu').slideToggle()
+            })
+        })
+
+
+    </script>
 </body>
 
 </html>
