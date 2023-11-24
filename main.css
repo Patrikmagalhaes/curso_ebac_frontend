@@ -1,0 +1,12 @@
+.form-container{
+max-width: 600px;
+width: 100%;
+margin: 0 auto;
+}
+.btn-primary{
+    margin-top: 5%;
+}
+.off {
+    display: none;
+}
+
