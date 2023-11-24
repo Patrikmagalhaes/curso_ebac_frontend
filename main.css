@@ -1,12 +1,18 @@
-.form-container{
-max-width: 600px;
-width: 100%;
-margin: 0 auto;
+body{
+    background-color: rgb(207, 218, 228);
 }
-.btn-primary{
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 20vh auto;
+
+}
+
+.btn-primary {
     margin-top: 5%;
+    width: 100%;
 }
+
 .off {
     display: none;
 }
-
