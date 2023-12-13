@@ -20,13 +20,16 @@ body {
     font-family: 'Pacifico', cursive;
 }
 
-.section-title-span {
-    color: #e15f41;
-}
-
 .navbar-toggler {
     background-color: #fff;
 }
 #sobre{
     background-color: #e15e4144;
+}
+.carousel-item img{
+    max-height: 500px;
+    width: 100%;
+}
+.text-colored{
+    color: #e15f41;
 }
